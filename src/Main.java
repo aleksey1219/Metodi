@@ -21,7 +21,7 @@ public class Main {
         }
     }
 
-    public static void deliver(int km) {
+    public static int deliver(int km) {
         int day = 1;
         if (km < 20) {
             System.out.println("Потребуется дней: " + day);
@@ -32,6 +32,7 @@ public class Main {
         } else if (km >= 100) {
             System.out.println("Доставки нет");
         }
+        return km;
     }
 
 
@@ -49,6 +50,6 @@ public class Main {
 
     public static void task3() {
         System.out.println("Решение задачи №3");
-        deliver(2);
+        deliver(100);
     }
 }
